@@ -8,19 +8,23 @@ function setup()
 
 function draw()
 {
-    background("purple");
-   
+    background("yellow");
+    //show rectmode first and then push & pop
+
+    rectMode(CENTER);
+
     push();
 
-    fill("Red")
-   rectMode(CENTER);
-    rect(200, 200, 60, 40);
- 
+    fill("Red");
+    rect(100, 100, 40, 70);
+
     pop();
 
-    rect(100, 100, 60, 80)
 
- 
-    
+    fill("Blue");
+    rect(200, 200, 60, 40);
+  
+
+    text(mouseX + "," + mouseY, mouseX, mouseY);
 
 }
